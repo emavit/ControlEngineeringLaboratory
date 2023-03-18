@@ -61,7 +61,7 @@ mld.BD = 0.0;                       %   load viscous coeff (n.a.)
 
 %   overall mech load params
 mld.J     = mld.JD + gbox.J;        %   total inertia
-mld.B     = 2.5e-4;                 %   total viscous fric coeff (estimated) 
+mld.B     = 2e-6;                   %   total viscous fric coeff (estimated) 
 mld.tausf = 1.0e-2;                 %   total static friction (estimated) 
 
 
