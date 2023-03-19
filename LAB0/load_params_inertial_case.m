@@ -138,7 +138,7 @@ perf.wg = 3/(perf.d*perf.ts5);
 perf.phi = 100*perf.d;              %[deg] approximation for phi<70 deg
 perf.phi2=atan((2*perf.d)/(sqrt(sqrt(1+a*perf.d^4)-2*perf.d^2)));   %[rad] value not approximated
 
-%% Real derivative (2nd order, dismissed)
+%% Real derivative (2nd order, motor speed)
 
 der.f = 20;
 der.wc = 2*pi*der.f;
