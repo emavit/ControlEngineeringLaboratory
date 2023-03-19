@@ -128,11 +128,17 @@ pid.Kd = 1;
 pid.K = 1;
 
 
-%% Real derivative
+%% Real derivative (2nd order, dismissed)
 
 der.f = 20;
 der.wc = 2*pi*der.f;
 der.d = 1/sqrt(2);
+
+%% Real derivative (1st order, high pass)
+
+der.b = 2.5;     % This parameter varies from 2 to 5, has to be set
+der.Tl = 1/(der.b*perf.wg);
+
 
 %% Required performances
 
