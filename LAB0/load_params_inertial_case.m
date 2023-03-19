@@ -128,6 +128,16 @@ pid.Kd = 1;
 pid.K = 1;
 
 
+%% Required performances
+
+perf.ts5 = 0.15;
+perf.mp = 0.1;
+
+perf.d = log(1/perf.mp)/sqrt(pi^2+log(1/perf.mp)^2);
+perf.wg = 3/(perf.d*perf.ts5);
+perf.phi = 100*perf.d;              %[deg] approximation for phi<70 deg
+perf.phi2=atan((2*perf.d)/(sqrt(sqrt(1+a*perf.d^4)-2*perf.d^2)));   %[rad] value not approximated
+
 %% Real derivative (2nd order, dismissed)
 
 der.f = 20;
@@ -138,13 +148,3 @@ der.d = 1/sqrt(2);
 
 der.b = 2.5;     % This parameter varies from 2 to 5, has to be set
 der.Tl = 1/(der.b*perf.wg);
-
-
-%% Required performances
-
-perf.ts5 = 0.15;
-perf.mp = 0.1;
-
-perf.d = log(1/perf.mp)/sqrt(pi^2+log(1/perf.mp)^2);
-perf.wg = 3/(perf.d*perf.ts5);
-perf.phi = 100*perf.d;
