@@ -5,11 +5,11 @@ IMPORANT - For each lab' folder, we must have parameters of the model, model of 
 ## FILES DESCRIPTION
 * **.slxc** : these files are cache files of the equivalent .slx simulink model; they will not be mentioned in the description.
 
-***OLD LABS*** : contains the material from last year course "Laboratorio di controlli". This material is very similar to the one of "LAB0" (but there are some mistakes)
+### ***OLD LABS*** : contains the material from last year course "Laboratorio di controlli". This material is very similar to the one of "LAB0" (but there are some mistakes)
   * inside there is a folder for each of the 5 labs
       * inside ot these code + data
 
-***LAB0***
+### ***LAB0***
   * **Black box MAC/Windows** : folders with black box model given to test the real model.
   * **Friction_estimation.mlx** : live script used to estimate viscous and static friction coefficients using data from lab simulations.
   * **Inertia_estimation.mlx** : live script used to estimate the equivalent inertia starting from friction estimastion and lab measurements.
