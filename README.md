@@ -20,3 +20,7 @@ contains the material from last year course "Laboratorio di controlli". This mat
   * **parameters.mat** : workspace file containing the parameters used in the models (saved as the last run of parameters.mlx)
   * **parameters.mlx** : live script containing all the necessary parameters for the models and simulations (including PID constants)
 
+### ***LAB1***
+  * **Black box MAC/Windows** : folders with black box model given to test the real model.
+  * **parameters.mat** : workspace file containing the parameters used in the models (saved as the last run of parameters.mlx)
+  * **Parameters.mlx** : live script containing all the necessary parameters for the models and simulations (including PID constants) - wrt to LABO in this case we are considering the estimated values obtained in LAB
