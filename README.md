@@ -26,3 +26,4 @@ contains the material from last year course "Laboratorio di controlli". This mat
   * **Parameters.mlx** : live script containing all the necessary parameters for the models and simulations (including PID constants) - wrt to LABO in this case we are considering the estimated values obtained in LAB
   * **lab1_ss.slx** : Simulink state-space model for nominal tracking of step input
   * **lab1_ss_robust.slx** : Simulinḱ state-space model for robust tracking of step input (nominal model + feedback integrator)
+  * **lab1_error_space.slx** : Simulink error state-space model for tracking of sinusoid reference signal with constant disturbance
