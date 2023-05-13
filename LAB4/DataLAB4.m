@@ -1,3 +1,6 @@
+clear all
+clc
+
 %% General parameters and conversion gains
 
 % controller sampling time
@@ -220,3 +223,7 @@ sens.mpu.gyro.LSB2rads = sens.mpu.gyro.LSB2degs * deg2rad; % out quantization [r
 sens.mpu.gyro.bw = 98; % out lowpass filter BW [Hz]
 sens.mpu.gyro.noisestd = 5e-3*sqrt(100); % output noise std [degs-rms]
 sens.mpu.gyro.noisevar = sens.mpu.acc.noisestd ^2; % output noise var [degs^2]
+
+%% Save parameters
+
+save('parameters.mat')
